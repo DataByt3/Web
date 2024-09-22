@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="letter.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Letter</title>
+</head>
+<body>
+    <div class="container">  
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">To my crush</br> Chloe,</br>I like you!</div>
+                <div class="heart"></div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".container").mouseenter(function () {
+                console.log("Mouse entered the container");
+                $(".card").stop().animate({ top: "-90px" }, "slow");
+            }).mouseleave(function () {
+                console.log("Mouse left the container");
+                $(".card").stop().animate({ top: "5px" }, "slow");
+            });
+        });
+        $(document).ready(function () {
+    $(".container").on("click", function () {
+        $(".card").stop().animate({ top: "-90px" }, "slow");
+    });
+});
+    </script>
+</body>
+</html>
+
+<!--Day 8-14: learning to Code for a love letter-->
