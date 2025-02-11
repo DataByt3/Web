@@ -72,13 +72,10 @@ body {
   font-family: 'Brush Script MT', cursive;
   font-size: 28px;
   text-align: center;
-  line-height: 25px;
-  width: 100%; /* Ensures it spans the card */
-  top: 50%; /* Moves it to the vertical center */
-  left: 50%; /* Moves it to the horizontal center */
-  transform: translate(-50%, -50%); /* Centers perfectly */
+  line-height:25px;
+  top:19px;
+  left:65px;
   color: #003049;
-  white-space: pre-wrap; /* Preserves line breaks while wrapping text */
 }
 
 .heart {
